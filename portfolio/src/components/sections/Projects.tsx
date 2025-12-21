@@ -36,7 +36,9 @@ const Projects = () => {
                       <Card.Title className="fw-semibold mb-2">
                         {project.title}
                       </Card.Title>
-                      <Card.Text className="text-muted">
+                      
+
+                      <Card.Text className="text-muted"  >
                         {project.description}
                       </Card.Text>
                     </div>

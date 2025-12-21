@@ -1,5 +1,5 @@
 export const personalInfo = {
-  name: "Mutti Ullah",
+  name: "Muttiullah Qureshi",
   title: "Full-Stack Developer",
   intro:
     "Mid-level full-stack developer with experience building production-ready web applications. Focused on scalable, maintainable solutions that solve real-world problems.",
