@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import ThemeInit from "@/src/components/ThemeInit";
+import Script from "next/script";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -40,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-<html lang="en" data-bs-theme="light" suppressHydrationWarning>
+    <html lang="en" data-bs-theme="light" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -57,10 +59,25 @@ export default function RootLayout({
             `,
           }}
         />
+        {/* ✅ Google Analytics - LOAD SCRIPT */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+        />
+
+        {/* ✅ Google Analytics - CONFIG */}
+        <Script strategy="afterInteractive">
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+    `}
+        </Script>
       </head>
 
       <body className={inter.className}>
-        <ThemeInit/>
+        <ThemeInit />
         {children}
       </body>
     </html>
