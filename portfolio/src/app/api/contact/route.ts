@@ -18,10 +18,10 @@ export async function POST(req: Request) {
     });
 
     await transporter.sendMail({
-      from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
+      from: `"Portfolio Contact" <${email}>`,
       to: process.env.EMAIL_USER,
       replyTo: email,
-      subject: `New Portfolio Message from ${name}`,
+      subject: `New Opportunity Locking from ${name}`,
       html: `
         <h3>New Contact Message</h3>
         <p><strong>Name:</strong> ${name}</p>

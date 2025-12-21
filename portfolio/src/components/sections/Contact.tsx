@@ -3,9 +3,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Container, Row, Col, Button, Form, Alert } from "react-bootstrap";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope,FaWhatsapp } from "react-icons/fa";
 import { staggerContainer, childVariants } from "@/src/components/AnimationVariants";
 import { socialLinks } from "@/src/data/socialLinks";
+import { personalInfo } from "@/src/data/personalInfo";
+
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -121,11 +124,26 @@ const Contact = () => {
                 )}
 
                 <div className="d-grid mt-2">
-                  <Button variant="dark" size="lg" type="submit" disabled={status === "loading"}>
+                  <Button variant="primary" size="lg" type="submit" disabled={status === "loading"}>
                     {status === "loading" ? "Sending..." : "Send Message"}
                   </Button>
                 </div>
               </Form>
+              <div className="text-center mt-4">
+                <p className="text-muted mb-2">Or reach me directly on</p>
+
+                <Button
+                  variant="success"
+                  size="sm"
+                  className="d-inline-flex align-items-center gap-2"
+                  href={`https://wa.me/${personalInfo.phone}?text=${encodeURIComponent(
+                    "Hi! I came across your portfolio and would like to connect."
+                  )}`}
+                  target="_blank"
+                >
+                  <FaWhatsapp /> WhatsApp Me
+                </Button>
+              </div>
             </Col>
           </Row>
         </motion.div>

@@ -2,8 +2,9 @@
 
 import { personalInfo } from "@/src/data/personalInfo";
 import { socialLinks } from "@/src/data/socialLinks";
-import { Container, Row, Col } from "react-bootstrap";
-import { FaGithub, FaLinkedin, FaFileDownload, FaEnvelope } from "react-icons/fa";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { FaGithub, FaLinkedin, FaFileDownload, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+
 
 
 const Footer = () => {
@@ -23,7 +24,7 @@ const Footer = () => {
                 let Icon = FaEnvelope;
                 if (link.title === "Github") Icon = FaGithub;
                 else if (link.title === "LinkedIn") Icon = FaLinkedin;
-                else if (link.title === "Email") Icon = FaFileDownload;
+                else if (link.title === "Email") Icon = FaEnvelope;
 
                 return (
                   <a
@@ -34,10 +35,20 @@ const Footer = () => {
                     className="text-white text-decoration-none d-flex align-items-center gap-1 hover-opacity"
                   >
                     <Icon />
-                    {link.title === "Email" ? "Resume" : link.title}
+                    {link.title}
                   </a>
                 );
               })}
+
+              <a
+                className="text-white text-decoration-none d-flex align-items-center gap-1 hover-opacity"
+                href={`https://wa.me/${personalInfo.phone}?text=${encodeURIComponent(
+                  "Hi! I came across your portfolio and would like to connect."
+                )}`}
+                target="_blank"
+              >
+                <FaWhatsapp /> WhatsApp
+              </a>
             </div>
           </Col>
         </Row>

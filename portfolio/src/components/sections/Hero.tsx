@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { FaGithub, FaLinkedin, FaFileDownload, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFileDownload, FaEnvelope, FaPhone  } from "react-icons/fa";
 import { staggerContainer, childVariants } from "@/src/components/AnimationVariants";
 import { personalInfo } from "@/src/data/personalInfo";
 import { socialLinks } from "@/src/data/socialLinks";
@@ -63,6 +63,7 @@ const Hero = () => {
                       {link.title === "Github" && <FaGithub />}
                       {link.title === "LinkedIn" && <FaLinkedin />}
                       {link.title === "Email" && <FaEnvelope />}
+                      
                     </a>
                   ))}
                 </div>
