@@ -20,6 +20,8 @@ export const metadata: Metadata = {
     "Node.js",
     "Django",
     "Web Developer",
+    "AI",
+    "AI Engineer"
   ],
   authors: [{ name: "Mutti Ullah" }],
   openGraph: {
@@ -27,6 +29,8 @@ export const metadata: Metadata = {
     description:
       "Mid-level full-stack developer building scalable web and mobile applications.",
     type: "website",
+    url: "https://my-ready-portfolio.vercel.app/",
+    images: [{ url: "/my_cv_n.pdf" }]
   },
 };
 

@@ -4,6 +4,6 @@ export const personalInfo = {
   intro:
     "Mid-level full-stack developer with experience building production-ready web applications. Focused on scalable, maintainable solutions that solve real-world problems.",
   resumeLink: "/my_cv_n.pdf",
-  email: "mutti.ullah@email.com",
+  email: "mutti0738@gmail.com",
 };
 

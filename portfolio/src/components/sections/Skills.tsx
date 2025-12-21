@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { staggerContainer, childVariants } from "@/src/components/AnimationVariants";
-import { skillGroups } from "@/src/data/skillGroups";
+import { skills } from "@/src/data/skills";
 
 
 const Skills = () => {
@@ -24,7 +24,7 @@ const Skills = () => {
         </h2>
 
         <Row className="g-4 justify-content-center">
-          {skillGroups.map((group, index) => (
+          {skills.map((group, index) => (
             <Col key={index} md={6} lg={4}>
               <motion.div variants={childVariants} className="h-100">
                 <Card className="h-100 shadow-sm border-0">

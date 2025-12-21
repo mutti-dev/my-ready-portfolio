@@ -23,7 +23,7 @@ const Hero = () => {
           <Col lg={8}>
             <motion.div variants={childVariants} className="h-100">
 
-              <h1 className="fw-bold display-4 mb-3">
+              <h1 className="fw-bold display-2 mb-3">
                 {personalInfo.name}
               </h1>
 
@@ -48,7 +48,7 @@ const Hero = () => {
 
                 <Button
                   href={personalInfo.resumeLink}
-                  variant="outline-dark"
+                  variant="outline-primary"
                   size="lg"
                   className="d-flex align-items-center gap-2"
                 >

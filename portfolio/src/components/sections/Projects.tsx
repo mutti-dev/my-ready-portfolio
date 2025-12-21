@@ -21,6 +21,7 @@ const Projects = () => {
       variants={staggerContainer}
     >
       <Container>
+        
         <h2 className="text-center fw-semibold display-6 mb-5">
           Projects
         </h2>
@@ -56,7 +57,7 @@ const Projects = () => {
                       <Button
                         href={project.github}
                         target="_blank"
-                        variant="outline-dark"
+                        variant="outline-secondary"
                         size="sm"
                         className="d-flex align-items-center gap-2"
                       >
@@ -64,9 +65,9 @@ const Projects = () => {
                         GitHub
                       </Button>
 
-                      {project.demo && (
+                      {/* {project.demo && (
                         <Button
-                          href={project.demo}
+                          href={project?.demo}
                           target="_blank"
                           variant="dark"
                           size="sm"
@@ -75,7 +76,7 @@ const Projects = () => {
                           <FaExternalLinkAlt />
                           Demo
                         </Button>
-                      )}
+                      )} */}
                     </div>
                   </Card.Body>
                 </Card>

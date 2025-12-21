@@ -1,24 +1,25 @@
 export const experiences = [
   {
-    title: "Full-Stack Developer (Freelance)",
-    period: "2022 — Present",
+    title: "Full Stack Developer & AI Engineer",
+    period: "2024 — 2025",
     description:
       "Delivered production-ready web applications for multiple clients, focusing on scalability, performance, and clean architecture. Projects consistently improved usability and business outcomes.",
     responsibilities: [
-      "Designed and built full-stack systems using React, Node.js, and PostgreSQL.",
-      "Integrated third-party APIs and real-time services.",
-      "Maintained code quality through reviews, refactoring, and documentation.",
+      "Developed 3 production React Native applications for iOS and Android platforms with complex navigation flows using React Navigation",
+      "Implemented state management solutions using Redux and Context API for applications supporting 10,000+ users",
+      "Built real-time chat functionality with WebSocket integration and optimized FlatList performance for smooth scrolling with 1000+ messages",
+
     ],
   },
   {
-    title: "Software Engineer",
-    period: "2020 — 2022",
+    title: "Software Analyst & Forms Team Lead",
+    period: "2023 — present",
     description:
-      "Worked on enterprise-grade systems involving backend services, frontend interfaces, and real-time data flows. Contributed to stable, high-traffic production environments.",
+      "",
     responsibilities: [
-      "Implemented REST APIs and WebSocket-based features.",
-      "Optimized database queries and backend performance.",
-      "Collaborated in Docker-based deployments and CI/CD workflows.",
+      "Lead forms development team and analyze business requirements for digital solutions",
+      "Increased user adoption by 40% through strategic team leadership and intelligent form optimization",
+ 
     ],
   },
 ];
