@@ -1,0 +1,58 @@
+.blogHeader {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.headerContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blogMeta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  opacity: 0.95;
+}
+
+.metaIcon {
+  font-size: 1.1rem;
+}
+
+.blogTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.blogDescription {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .blogTitle {
+    font-size: 1.8rem;
+  }
+
+  .blogDescription {
+    font-size: 1rem;
+  }
+
+  .blogMeta {
+    gap: 10px;
+  }
+}

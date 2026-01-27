@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { FaGithub, FaLinkedin, FaFileDownload, FaEnvelope, FaPhone  } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFileDownload, FaEnvelope, FaPhone } from "react-icons/fa";
 import { staggerContainer, childVariants } from "@/src/components/AnimationVariants";
 import { personalInfo } from "@/src/data/personalInfo";
 import { socialLinks } from "@/src/data/socialLinks";
@@ -56,18 +56,24 @@ const Hero = () => {
                   Download Resume
                 </Button>
 
-
+                <a className="d-flex align-items-center gap-3 ms-lg-3" href="/blogs">
+                  Read My Blogs
+                </a>
                 <div className="d-flex align-items-center gap-3 ms-lg-3">
+
                   {socialLinks.map((link) => (
                     <a key={link.title} href={link.link} target="_blank" rel="noopener noreferrer" className="text-muted fs-4">
                       {link.title === "Github" && <FaGithub />}
                       {link.title === "LinkedIn" && <FaLinkedin />}
                       {link.title === "Email" && <FaEnvelope />}
-                      
+
                     </a>
                   ))}
                 </div>
+
               </div>
+
+
             </motion.div>
           </Col>
         </Row>

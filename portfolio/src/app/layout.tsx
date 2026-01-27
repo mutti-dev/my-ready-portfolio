@@ -12,9 +12,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Mutti Ullah | Full-Stack Developer",
+  title: "Mutti Ullah | Full-Stack Developer & Blogger",
   description:
-    "Portfolio of Mutti Ullah, a mid-level full-stack developer specializing in React, Next.js, Node.js, and Django.",
+    "Portfolio of Mutti Ullah, a mid-level full-stack developer specializing in React, Next.js, Node.js, and Django. Explore my projects, experience, and blog articles on web development.",
   keywords: [
     "Full-Stack Developer",
     "Next.js",
@@ -23,16 +23,27 @@ export const metadata: Metadata = {
     "Django",
     "Web Developer",
     "AI",
-    "AI Engineer"
+    "AI Engineer",
+    "Blog",
+    "Web Development Articles"
   ],
   authors: [{ name: "Mutti Ullah" }],
+  creator: "Mutti Ullah",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://my-ready-portfolio.vercel.app"),
   openGraph: {
-    title: "Mutti Ullah | Full-Stack Developer",
+    title: "Mutti Ullah | Full-Stack Developer & Blogger",
     description:
-      "Mid-level full-stack developer building scalable web and mobile applications.",
+      "Mid-level full-stack developer building scalable web and mobile applications. Read my blog for insights on modern web development.",
     type: "website",
     url: "https://my-ready-portfolio.vercel.app/",
-    images: [{ url: "/my_cv_n.pdf" }]
+    images: [{ url: "/my_cv_n.pdf" }],
+    locale: "en_US",
+    siteName: "Mutti Ullah Portfolio"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mutti Ullah | Full-Stack Developer & Blogger",
+    description: "Explore my portfolio, projects, and blog articles on web development",
   },
 };
 
