@@ -16,7 +16,7 @@ export const blogs: BlogPost[] = [
   {
     id: 3,
     title: "Real-time Chat Application with WebSocket",
-    slug: "real-time-chat-websocket-copy",
+    slug: "real-time-chat-websocket",
     description: "A deep dive into building real-time chat applications using WebSocket technology and modern frameworks.",
     tags: ["WebSocket", "Node.js", "Real-time", "Socket.io"],
     date: "2026-01-27",
